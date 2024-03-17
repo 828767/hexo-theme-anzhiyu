@@ -12,7 +12,7 @@
 // {% image url, alt=haha, width=400px %}
 // {% image url, alt=haha, width=400px, bg=#eee %}
 hexo.extend.tag.register('image', function(args) {
-  args = args.join(' ').split(', ');
+  args = args.join(' ').split(',');
   let url = args[0].trim();
   let alt = '';
   let bg = '';
